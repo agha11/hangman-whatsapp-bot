@@ -8,17 +8,16 @@ app.secret_key = os.environ.get("SECRET_KEY", "development-secret-key-change-me"
 # Word banks by difficulty
 WORD_BANKS = {
     "easy": [
-        "apple", "house", "tiger", "water", "phone",
-        "green", "music", "happy", "train", "school"
+    "apple", "chair", "house", "water", "plant", "bread", "train", "beach", "light", "music",
+    # ... continue adding until you reach 100 words
     ],
     "medium": [
-        "python", "flask", "developer", "hangman", "website",
-        "computer", "journey", "puzzle", "diamond", "football"
+    "planet", "bridge", "guitar", "castle", "forest", "window", "stream", "garden", "market", "pencil",
+    # ... continue adding until you reach 100 words
     ],
     "hard": [
-        "algorithm", "javascript", "cybersecurity", "entrepreneur",
-        "architecture", "blockchain", "programming", "development",
-        "automation", "technology"
+        "labyrinth", "synergy", "paradox", "zenith", "galaxy", "eclipse", "horizon", "mystic", "sphinx", "vortex",
+    # ... continue adding until you reach 100 words
     ],
 }
 
