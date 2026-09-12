@@ -146,12 +146,10 @@ def reset_score():
     init_game(session.get("difficulty", "medium"))
     session["result_counted"] = False
     return redirect(url_for("index"))
-
-
+@app.route('/')
+def index():
+    return render_template('index.html')
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=True)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
